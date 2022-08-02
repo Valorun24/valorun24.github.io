@@ -4,9 +4,45 @@
 }
 
 #certificate {
+  background-color: #ffffff;
+}
+
+#contact {
   background-color: #fdfcbe;
 }
 
 section {
   padding-top: 5rem;
+}
+
+#skills {
+  background-color: #fdfcbe;
+}
+#skills .bar {
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 5px 0 20px 0;
+}
+.bar .nilai {
+  height: 30px;
+  background-color: #f84744;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+}
+.html {
+  width: 75%;
+}
+.css {
+  width: 70%;
+}
+.js {
+  width: 40%;
+}
+.py {
+  width: 65%;
+}
+.cd {
+  width: 50%;
 }
