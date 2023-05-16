@@ -552,7 +552,7 @@ body {
 .about-text,
 .about-item-text {
   color: var(--battleship-gray);
-  font-size: var(--fs-6);
+  font-size: var(--fs-5);
   line-height: 1.7;
 }
 
