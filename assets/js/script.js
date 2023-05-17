@@ -22,16 +22,31 @@ window.addEventListener("scroll", function () {
   window.scrollY >= 500 ? goTopBtn.classList.add("active") : goTopBtn.classList.remove("active");
 });
 
-const audio = new Audio();
-audio.src = "assets/audio/BATAS.mp3";
-audio.loop = true;
-audio.play();
-audio.pause();
+// const audio = new Audio();
+// audio.src = "assets/audio/BATAS.mp3";
+// audio.loop = true;
+// audio.play();
+// audio.pause();
 
-function mulaiaudio() {
-  var play = document.getElementById("btnplay");
-  var mute = document.getElementById("btnplay");
+var audio = document.getElementById("myAudio");
 
-  play.addEventListener("click", play);
-  mute.addEventListener("click", mute);
+function playAudio() {
+  audio.play();
 }
+
+function pauseAudio() {
+  audio.pause();
+}
+
+function replayAudio() {
+  audio.currentTime = 0;
+  audio.play();
+}
+
+// function mulaiaudio() {
+//   var play = document.getElementById("btnplay");
+//   var mute = document.getElementById("btnplay");
+
+//   play.addEventListener("click", play);
+//   mute.addEventListener("click", mute);
+// }

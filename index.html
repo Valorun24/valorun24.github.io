@@ -94,9 +94,14 @@
 
 
               <div class="btn-group">
-                <a href="#" id="btn1" onclick="audio.play();" class="btn btn-primary" >Play Musik</a>
+                <audio id="myAudio">
+                  <source src="assets/audio/BATAS.mp3" type="audio/mp3">
+                </audio>
+                <a href="#" id="btn1" onclick="playAudio();" class="btn btn-primary" >Play Musik</a>
 
-                <a href="#" id="btn" onclick="audio.pause();" class="btn btn-outline">Pause Musik</a>
+                <a href="#" id="btn" onclick="pauseAudio();" class="btn btn-outline">Pause Musik</a>
+
+                <a href="#" id="btn2" onclick="replayAudio();" class="btn btn-primary" >Replay Musik</a>
                 <!-- <audio controls>
                   <source src="assets/audio/BATAS.mp3" type="audio/mpeg">
                   Browsermu tidak mendukung tag audio, upgrade donk!
