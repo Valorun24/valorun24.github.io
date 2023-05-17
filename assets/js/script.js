@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
  * navbar toggle
@@ -12,8 +12,6 @@ navToggleBtn.addEventListener("click", function () {
   header.classList.toggle("active");
 });
 
-
-
 /**
  * show go top btn when scroll window to 500px
  */
@@ -21,6 +19,19 @@ navToggleBtn.addEventListener("click", function () {
 const goTopBtn = document.querySelector("[data-go-top]");
 
 window.addEventListener("scroll", function () {
-  window.scrollY >= 500 ? goTopBtn.classList.add("active")
-    : goTopBtn.classList.remove("active");
+  window.scrollY >= 500 ? goTopBtn.classList.add("active") : goTopBtn.classList.remove("active");
 });
+
+const audio = new Audio();
+audio.src = "assets/audio/BATAS.mp3";
+audio.loop = true;
+audio.play();
+audio.pause();
+
+function mulaiaudio() {
+  var play = document.getElementById("btnplay");
+  var mute = document.getElementById("btnplay");
+
+  play.addEventListener("click", play);
+  mute.addEventListener("click", mute);
+}
