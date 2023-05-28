@@ -30,6 +30,17 @@ window.addEventListener("scroll", function () {
 
 var audio = document.getElementById("myAudio");
 
+function playRandomMusic() {
+  var audio = document.getElementById("myAudio");
+  var sources = audio.getElementsByTagName("source");
+  var randomIndex = Math.floor(Math.random() * sources.length);
+  var randomSource = sources[randomIndex].src;
+
+  audio.src = randomSource;
+  audio.load();
+  audio.play();
+}
+
 function playAudio() {
   audio.play();
 }
