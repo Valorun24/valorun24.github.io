@@ -82,6 +82,10 @@
   box-sizing: border-box;
 }
 
+body {
+  cursor: url("../images/kursr1.png"), auto;
+}
+
 li {
   list-style: none;
 }
@@ -762,6 +766,16 @@ body {
 
 .go-top:is(:hover, :focus) {
   transform: translateY(-25px);
+}
+
+canvas {
+  margin: 0 0 25px auto;
+  border: 6px solid #22a699;
+  height: 720px;
+  width: 1200px;
+  display: block;
+  background: url(../images/ultah.png);
+  max-width: 100%;
 }
 
 /*-----------------------------------*\
