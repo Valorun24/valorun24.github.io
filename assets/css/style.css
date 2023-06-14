@@ -774,7 +774,7 @@ canvas {
   height: 720px;
   width: 1200px;
   display: block;
-  background: url(../images/ultah.png);
+  background: black;
   max-width: 100%;
 }
 
