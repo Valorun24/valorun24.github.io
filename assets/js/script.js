@@ -149,6 +149,30 @@ let words3 = "";
 
   setTimeout(ngetik3, 200);
 })();
+
+const txtElement4 = ["Level Up Day"];
+let count4 = 0;
+let txtIndex4 = 0;
+let currentTxt4 = "";
+let words4 = "";
+
+(function ngetik4() {
+  if (count4 == txtElement4.length) {
+    count4 = 0;
+  }
+
+  currentTxt4 = txtElement4[count4];
+
+  words4 = currentTxt4.slice(0, ++txtIndex4);
+  document.querySelector(".efek-ngetik4").textContent = words4;
+
+  if (words4.length == currentTxt4.length) {
+    count4++;
+    txtIndex4 = 0;
+  }
+
+  setTimeout(ngetik4, 200);
+})();
 // function mulaiaudio() {
 //   var play = document.getElementById("btnplay");
 //   var mute = document.getElementById("btnplay");
