@@ -164,8 +164,8 @@ let words3 = "";
     ctx = canvas.getContext("2d"),
     W = (canvas.width = window.innerWidth),
     H = (canvas.height = window.innerHeight),
-    maxP = 3500,
-    minP = 3000,
+    maxP = 200,
+    minP = 100,
     fireworks = [];
 
   function tick() {
