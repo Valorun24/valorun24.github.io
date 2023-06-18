@@ -816,6 +816,13 @@ canvas {
   .footer-top {
     grid-template-columns: 1fr 1fr;
   }
+
+  canvas {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background-size: cover;
+  }
 }
 
 /**
@@ -882,6 +889,13 @@ canvas {
   .footer-bottom .logo,
   .copyright {
     margin-bottom: 0;
+  }
+
+  canvas {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background-size: cover;
   }
 }
 
@@ -992,6 +1006,13 @@ canvas {
     animation-delay: 0.5s;
   }
 
+  canvas {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background-size: cover;
+  }
+
   @keyframes rotate {
     0% {
       transform: rotate(0);
@@ -1057,6 +1078,13 @@ canvas {
 
   .container {
     max-width: 1150px;
+  }
+
+  canvas {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background-size: cover;
   }
 
   :is(.popular, .blog) .card-content {
